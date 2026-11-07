@@ -8,9 +8,9 @@ Read the [terms and disclaimer](DISCLAIMER.md) first.
 
 | Track | What | Stage |
 |---|---|---|
-| A | New-launch meme coins (Solana, Base) | Shadow logging only: every new pool, every safety check, live cost quotes, 2-hour outcomes. No trades. |
-| B | Stablecoins | Depeg watch and price gaps between venues, logged every 5 minutes. No trades. |
-| C | Established meme coins | Historical backtest with real costs, then forward paper testing. No trades. |
+| A | New-launch meme coins (Solana; Base paused) | Shadow logging only: safety checks within minutes of launch, live cost quotes, 2-hour outcomes valued by real sell quotes. Stop rule set in advance (see log). No trades. |
+| B | Stablecoins | Depeg watch (an alert needs two venues to agree) and real order-book gaps between 5 exchanges after fees, every 10 minutes. No trades. |
+| C | Established meme coins | Backtest with real costs done: the one surviving idea (buying sharp dips) failed the robustness check. Closed; the locked final data was never used. No trades. |
 
 ## Standards (same as the AlgonikHQ forex research)
 
