@@ -2,6 +2,18 @@
 
 Newest first. Figures are percentages of position size. No trades are being placed.
 
+## 21 November 2026 (later) - Three more ideas tested, none passed
+
+Same standards throughout: rules committed before any test, real costs, random-timing and buy-and-hold benchmarks, a Deflated Sharpe bar, newest data held back.
+
+**Track D: BTC/ETH trend-following (long or cash).** 10 rules on 2018-2022. One survivor on BTC (price above its 100-day average) plus a volatility-sized version. Both failed validation on 2023-2024: Sharpe 1.41 and 1.43 against 2.01 for holding, half the return, and deeper drawdowns (-38% against -26%). The design-period edge came mostly from sitting out two crashes, not from timing. Closed. Locked data (2025 onwards) never opened.
+
+**Track E: funding rates as a spot signal (BTC/ETH).** 6 rules on 2019-2022. Stepping aside when funding was high did not help. Holding BTC only while 7-day funding was negative came closest (Sharpe 1.11 against 0.67, worst drawdown -21% against -77%, beat random timing) but failed the Deflated Sharpe bar (0.91 against 0.95), and the same rule failed on ETH. Closed. Validation and locked data never opened.
+
+**Track F: momentum on Solana meme coins (BONK, WIF, BOME, PENGU, TRUMP, PUMP).** 10 rules (momentum, breakout, rotation) on each coin oldest 60% of data. Holding them lost 53% a year. Every rule lost money too, and none beat random timing. Chasing last week top meme was worst (-52% to -68% a year). Closed.
+
+**Where this leaves us:** six tracks, every one closed by rules written in advance. Nothing here is worth real money. The one near-miss (BTC, hold only while funding is negative) will be watched forward, recording only, as a new hypothesis with its own rules. It is not a pass.
+
 ## 21 November 2026 (update) - Track A follow-up study closed: nothing to take forward
 
 Rules for a follow-up study were written and committed before any test ran: pass bar, a budget of 20 rules, a date split and a locked final check. Design data only (6-14 November, 15,363 checked pools). The locked data was never opened.
