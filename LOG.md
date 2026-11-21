@@ -26,7 +26,20 @@ What two weeks of clean data show (a typical 24 hours, to 20 November):
 collapsed, entering 30-60 minutes after launch only if the pool survived, and simpler exits. Rules will be written
 before the study runs, with the newest data held back for a single final check.
 
-**Tracks B and C:** no change in this entry.
+**Track B (stablecoins): no edge in the gap trade. The depeg watch stays on.**
+- Order-book gaps: 2,028 readings at $1,000 and $10,000 between Kraken, Binance, OKX, Bybit and Coinbase since
+  7 November. Not one showed a profit after taker fees, even with money already on both exchanges. Median best gap
+  after fees -0.10%, best ever -0.083%. The buy-here, sell-there trade is closed.
+- Peg watch, 17 days (about 4,850 readings per coin and source): USDC, USDT and USDe stayed within 0.25% of $1 on
+  every source. DAI on Kraken moved more than 1% off 10 times while the wider DAI price never moved more than 0.2%:
+  a thin market, not a depeg. This is why an alert needs two sources to agree. No alert fired.
+- USDC traded at a steady premium over USDT of up to about 0.23%, the same on every venue, so nothing to arbitrage.
+- Three single Jupiter round-trip quotes (USDC to USDT and back) came back above what went in, up to +0.84%. Each was
+  one reading, back to normal five minutes later. Treated as quote glitches: a quote is not a fill, and nothing
+  checking every five minutes could act on it.
+- Jupiter rate-limited us about 60 times a day until 13 November, so it has about 540 fewer readings than other sources.
+
+**Track C (established meme coins):** no change in this entry.
 
 ## 7 November 2026 - We caught a flaw in our own process, and the first honest results
 

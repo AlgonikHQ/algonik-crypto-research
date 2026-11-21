@@ -9,7 +9,7 @@ Read the [terms and disclaimer](DISCLAIMER.md) first.
 | Track | What | Stage |
 |---|---|---|
 | A | New-launch meme coins (Solana; Base paused 7 Nov) | **Retired 10 Nov 2026 by its pre-set stop rule** (see log). The shadow logger keeps recording Solana as a dataset for an offline follow-up study. No trades. |
-| B | Stablecoins | Depeg watch (an alert needs two venues to agree) and real order-book gaps between 5 exchanges after fees, every 10 minutes. No trades. |
+| B | Stablecoins | Depeg watch stays on (an alert needs two sources to agree). Order-book gap trade **closed 21 Nov 2026**: 0 of 2,028 readings profitable after fees. No trades. |
 | C | Established meme coins | Backtest with real costs done: the one surviving idea (buying sharp dips) failed the robustness check. Closed; the locked final data was never used. No trades. |
 
 ## Standards (same as the AlgonikHQ forex research)
