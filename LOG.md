@@ -2,6 +2,19 @@
 
 Newest first. Figures are percentages of position size. No trades are being placed.
 
+## 21 November 2026 (update) - Track A follow-up study closed: nothing to take forward
+
+Rules for a follow-up study were written and committed before any test ran: pass bar, a budget of 20 rules, a date split and a locked final check. Design data only (6-14 November, 15,363 checked pools). The locked data was never opened.
+
+- Six rules tested: take-profit at 2x on the most volatile pools; the same after surviving 30 minutes; take-profit on pump.fun pools; holding Raydium LaunchLab pools for 2 hours; buying any pool still alive at 30 minutes; buying our gate-passers at 30 minutes.
+- All six lost money after costs, from -8.5% to -51.2% average per trade. Best: gate-passers bought at 30 minutes. Worst: the volatile pools, where 2x was hit 7-17% of the time and most of the rest went to zero.
+- Filters cut losses: the calmer rules beat random picks by 20-30 points. But calm pools barely move, so they lose roughly the trading cost.
+- The pattern: the pools most likely to double were also the most likely to collapse (94% on the most volatile flag). No feature in our data separated them.
+- Two mistakes caught and logged on the way: a measure that skipped early-checked tokens, and a valuation bug where price glitches (single readings millions of times entry) made one rule look like a winner. Fixed conservatively before re-scoring.
+- 14 of the 20 allowed rules left unused on purpose: more tries mostly raise the chance of a lucky fluke.
+
+**Decision:** Track A is closed. The logger keeps running as a dataset.
+
 ## 21 November 2026 - Track A retired by its own stop rule
 
 **Track A (new launches): retired.**
