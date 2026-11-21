@@ -8,7 +8,7 @@ Read the [terms and disclaimer](DISCLAIMER.md) first.
 
 | Track | What | Stage |
 |---|---|---|
-| A | New-launch meme coins (Solana; Base paused) | Shadow logging only: safety checks within minutes of launch, live cost quotes, 2-hour outcomes valued by real sell quotes. Stop rule set in advance (see log). No trades. |
+| A | New-launch meme coins (Solana; Base paused 7 Nov) | **Retired 10 Nov 2026 by its pre-set stop rule** (see log). The shadow logger keeps recording Solana as a dataset for an offline follow-up study. No trades. |
 | B | Stablecoins | Depeg watch (an alert needs two venues to agree) and real order-book gaps between 5 exchanges after fees, every 10 minutes. No trades. |
 | C | Established meme coins | Backtest with real costs done: the one surviving idea (buying sharp dips) failed the robustness check. Closed; the locked final data was never used. No trades. |
 
