@@ -2,6 +2,30 @@
 
 Newest first. Figures are percentages of position size. No trades are being placed.
 
+## 28 November 2026 - Correction: our "collapsed within 2 hours" figures were overstated
+
+An audit of the logger found a measuring error in how we judged what happened to a token in the two hours after a bot could have bought it. We compared later readings with one taken when the pool was first spotted, a few minutes *before* a bot could actually buy. New pump.fun launches often spike in their first minutes and fall back before that point. So a token still trading normally could be counted as collapsed, and its value after two hours looked lower than it was. The error grew in late November, as the pools we check were caught higher in their launch spike, which is why our daily figures seemed to get worse.
+
+Corrected figures, recomputed on the same windows:
+
+| Entry | Claim | Was | Corrected |
+|---|---|---|---|
+| 7 Nov | Passing tokens that collapsed within 2 hours | 27.5% | 2.9% |
+| 7 Nov | Rejected tokens that collapsed | 61.7% | 28.3% |
+| 7 Nov | Passing tokens that doubled | none | none |
+| 21 Nov | Passing tokens that collapsed within 2 hours | 42.5% | 11.8% |
+| 21 Nov | Rejected tokens that collapsed | 78.7% | 39.6% |
+| 21 Nov | Median passing token after 2 hours | 0.61x | 0.98x |
+| 21 Nov | Median rejected token after 2 hours | 1.00x | 1.00x |
+| 21 Nov | Touched 2x, rejected vs passing | 20.2% vs 10.0% | 12.0% vs 6.6% |
+| 21 Nov (follow-up study) | Collapsed, most volatile flag | 94% | 61% (15% without it) |
+
+What this changes: our filter separates good from bad more clearly than we reported. Far fewer passing tokens collapsed than rejected ones. We withdraw the claim that the median passing token lost about 40% in two hours; it was roughly flat. Rejected tokens still touched 2x about twice as often, and the most volatile pools were still the most likely both to double and to collapse, though less extremely than we said.
+
+What is unchanged: Track A's retirement was judged on live sell quotes for the tokens we followed, not on these readings, so the verdict stands, as do the follower results (10% reached 1.5x; simulated exit −12.8% on average) and the round-trip costs. The six follow-up rules compared prices at the moment of entry with later prices taken the same way, so their results (all lost money after costs, −8.5% to −51.2%) stand. Tracks B to F use different data and are unaffected.
+
+The fix: every token is now judged from the first reading taken after a bot could have bought, and only against readings taken the same way. We also added an alert for a gap in the data we found on 25 November, when our data source returned new pools without liquidity values for about three hours.
+
 ## 21 November 2026 (later) - Three more ideas tested, none passed
 
 Same standards throughout: rules committed before any test, real costs, random-timing and buy-and-hold benchmarks, a Deflated Sharpe bar, newest data held back.
